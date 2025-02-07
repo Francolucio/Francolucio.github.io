@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebidas - El Tianguis</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="menu">
+    <div class="logo">
+      <a href="index.html">
+          <h1>El Tianguis</h1>
+      </a>
+  </div>
+  
+    <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+    <nav class="menu-links" id="menu-links">
+      <a href="index.html">Menú</a>
+      <a href="hotdogs.html">Hotdogs</a>
+      <a href="acompanamientos.html">Acompañamientos</a>
+      <a href="bebidas.html">Bebidas</a>
+    </nav>
+  </header>
+  
+
+  <main>
+    <h2 class="titulo-principal">Bebidas</h2>
+    <p class="subtitulo">Refrescos, sodas y más. ¡Acompaña tu Hot Dog con tu bebida preferida!</p>
+
+    <section class="bloque-productos">
+      <h3>Nuestras Bebidas</h3>
+      <div class="contenedor-productos">
+
+        <!-- Pepsi -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/pepsi.webp" alt="Pepsi">
+          </div>
+          <h4>Pepsi</h4>
+          <p>$20</p>
+          <small>También disponible en Light, Zero, etc.</small>
+        </div>
+
+        <!-- Agrega más tarjetas si ofreces otras bebidas -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Hot Dogs y Papas El Tianguis</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu-links");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+            menu.style.flexDirection = "column";
+        }
+    }
+  </script>
+  
+
+</body>
+</html>

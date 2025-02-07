@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Tianguis - Hot Dogs y Papas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo (opcional) y menú de navegación -->
+  <header class="menu">
+    <div class="logo">
+      <a href="index.html">
+          <h1>El Tianguis</h1>
+      </a>
+  </div>
+  
+    <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+    <nav class="menu-links" id="menu-links">
+      <a href="index.html">Menú</a>
+      <a href="hotdogs.html">Hotdogs</a>
+      <a href="acompanamientos.html">Acompañamientos</a>
+      <a href="bebidas.html">Bebidas</a>
+    </nav>
+  </header>
+  
+
+  <!-- Contenido principal -->
+  <main>
+    <h2 class="titulo-principal">¡Bienvenido a Hot Dogs y Papas El Tianguis!</h2>
+    <p class="subtitulo">Disfruta de nuestros productos y agrega los aderezos que más te gusten.</p>
+    
+    <!-- Sección: Hot Dogs -->
+    <section class="bloque-productos">
+      <h3>Hot Dogs</h3>
+      <div class="contenedor-productos">
+        
+        <!-- Tarjeta 1 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-chico.webp" alt="Hot Dog Chico">
+          </div>
+          <h4>Hot Dog Chico</h4>
+          <p>$25</p>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-normal.webp" alt="Hot Dog Normal">
+          </div>
+          <h4>Hot Dog Normal</h4>
+          <p>$30</p>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-grande.webp" alt="Hot Dog Grande (Salchicha Roja)">
+          </div>
+          <h4>Hot Dog Grande (Salchicha Roja)</h4>
+          <p>$35</p>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-polaca.webp" alt="Hot Dog Polaca">
+          </div>
+          <h4>Hot Dog Polaca</h4>
+          <p>$40</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección: Acompañamientos (Papas) -->
+    <section class="bloque-productos">
+      <h3>Papas</h3>
+      <div class="contenedor-productos">
+        
+        <!-- Tarjeta 1 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/papas-francesas.webp" alt="Papas a la francesa">
+          </div>
+          <h4>Papas a la francesa</h4>
+          <p>$35</p>
+          
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/papas-crisscut.webp" alt="Papas Crisscut">
+          </div>
+          <h4>Papas Crisscut</h4>
+          <p>$45</p>
+          
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/salchipapas.webp" alt="Salchipapas">
+          </div>
+          <h4>Salchipapas</h4>
+          <p>$50</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección: Bebidas -->
+    <section class="bloque-productos">
+      <h3>Bebidas</h3>
+      <div class="contenedor-productos">
+
+        <!-- Tarjeta 1 -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/pepsi.webp" alt="Pepsi">
+          </div>
+          <h4>Pepsi</h4>
+          <p>$20</p>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- Texto final -->
+    <p class="frase-final">¡Agrégale aderezo extra a tu gusto!</p>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>© 2025 Hot Dogs y Papas El Tianguis</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu-links");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+            menu.style.flexDirection = "column";
+        }
+    }
+  </script>
+  
+  
+</body>
+</html>

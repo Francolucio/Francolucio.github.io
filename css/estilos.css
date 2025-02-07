@@ -1,0 +1,210 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente y colores base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3E2B2B; /* Café oscuro */
+  color: #F5E0B7;           /* Texto claro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa la altura total de la pantalla */
+    background-color: #3E2B2B; /* Tu color de fondo */
+    color: #F5E0B7;
+    margin: 0;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2B1F1F;
+  padding: 1em 2em;
+  border-bottom: 2px solid #FFB84C;
+}
+
+.header .logo h1 {
+  color: #FFB84C;
+  font-size: 1.8rem;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #F5E0B7;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header nav ul li a.active,
+.header nav ul li a:hover {
+  color: #FFB84C;
+}
+
+/* Sección principal */
+main {
+  max-width: 1200px;
+  margin: 1.5em auto;
+  padding: 0 2em;
+}
+
+/* Títulos */
+.titulo-principal {
+  font-size: 2rem;
+  color: #FFB84C;
+  margin-bottom: 0.3em;
+}
+
+.subtitulo {
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+/* Bloques de productos */
+.bloque-productos {
+  margin-bottom: 2em;
+}
+
+.bloque-productos h3 {
+  font-size: 1.5rem;
+  color: #FFB84C;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #FFB84C;
+}
+
+/* Contenedor de tarjetas */
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+/* Tarjeta de producto */
+.card-producto {
+  background-color: #4B3B3B;
+  border-radius: 8px;
+  width: 180px;
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card-producto:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen redonda */
+.imagen-producto img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #FFB84C;
+  margin-bottom: 0.5em;
+}
+
+/* Texto dentro de la tarjeta */
+.card-producto h4 {
+  font-size: 1rem;
+  color: #FFB84C;
+  margin-bottom: 0.3em;
+}
+
+.card-producto p {
+  font-size: 0.9rem;
+  color: #F5E0B7;
+  margin-bottom: 0.3em;
+}
+
+.card-producto small {
+  font-size: 0.8rem;
+  color: #F5E0B7;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #2B1F1F;
+  color: #F5E0B7;
+  margin-top: 2em;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  /* Cambiamos space-between por flex-start */
+  justify-content: flex-start; 
+  padding: 1em 2em;
+  border-bottom: 1px solid #ccc;
+  gap: 2em; /* Para que haya algo de espacio entre logo y nav */
+}
+footer {
+  background-color: #2B1F1F;
+  text-align: center;
+  color: #F5E0B7;
+  padding: 1em 0;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4B3B3B; /* Color de fondo */
+  padding: 15px 20px;
+  color: #FFB84C; /* Color del texto */
+}
+
+.menu a {
+  color: #FFB84C; /* Color de las letras */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.menu-links {
+  display: flex;
+}
+
+.hamburguesa {
+  display: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #FFB84C; /* Color del icono hamburguesa */
+}
+
+@media screen and (max-width: 768px) {
+  .menu-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #4B3B3B; /* Color de fondo en móvil */
+      text-align: center;
+  }
+
+  .menu-links a {
+      padding: 15px;
+      border-bottom: 1px solid #FFB84C;
+  }
+
+  .hamburguesa {
+      display: block;
+  }
+}
+
+

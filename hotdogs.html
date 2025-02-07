@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotdogs - El Tianguis</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="menu">
+    <div class="logo">
+      <a href="index.html">
+          <h1>El Tianguis</h1>
+      </a>
+  </div>
+  
+    <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+    <nav class="menu-links" id="menu-links">
+      <a href="index.html">Menú</a>
+      <a href="hotdogs.html">Hotdogs</a>
+      <a href="acompanamientos.html">Acompañamientos</a>
+      <a href="bebidas.html">Bebidas</a>
+    </nav>
+  </header>
+  
+
+  <main>
+    <h2 class="titulo-principal">Hotdogs</h2>
+    <p class="subtitulo">Conoce nuestros Hotdogs a detalle: ingredientes, tamaños, recomendaciones.</p>
+
+    <section class="bloque-productos">
+      <h3>Nuestros Hotdogs</h3>
+      <div class="contenedor-productos">
+
+        <!-- Tarjeta Hot Dog Chico -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-chico.webp" alt="Hot Dog Chico">
+          </div>
+          <h4>Hot Dog Chico</h4>
+          <p>$25</p>
+          <small>Pan suave, salchicha clásica, aderezos: catsup, mostaza, mayonesa.</small>
+        </div>
+
+        <!-- Tarjeta Hot Dog Normal -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-normal.webp" alt="Hot Dog Normal">
+          </div>
+          <h4>Hot Dog Normal</h4>
+          <p>$30</p>
+          <small>El clásico: salchicha de pavo o cerdo, pan esponjoso, aderezos al gusto.</small>
+        </div>
+
+        <!-- Tarjeta Hot Dog Grande -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-grande.webp" alt="Hot Dog Grande (Salchicha Roja)">
+          </div>
+          <h4>Hot Dog Grande (Salchicha Roja)</h4>
+          <p>$35</p>
+          <small>Especial para los amantes de la salchicha estilo roja. ¡Más tamaño, más sabor!</small>
+        </div>
+
+        <!-- Tarjeta Hot Dog Polaca -->
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="img/hotdog-polaca.webp" alt="Hot Dog Polaca">
+          </div>
+          <h4>Hot Dog Polaca</h4>
+          <p>$40</p>
+          <small>Salchicha polaca de sabor intenso, pan artesanal y condimentos premium.</small>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Hot Dogs y Papas El Tianguis</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu-links");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+            menu.style.flexDirection = "column";
+        }
+    }
+  </script>
+  
+</body>
+</html>
